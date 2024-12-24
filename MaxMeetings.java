@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class MaxMeetings {
     public static void main(String[] args) {
         // Basically our greedy approach is to finish a meeting as soon as possible
+        // ending time should be as low as possible
         int[] s = {1, 3, 0, 5, 8, 5};
         int[] e = {2, 4, 6, 7, 9, 9};
         System.out.println(maxMeetings(s, e));
@@ -26,7 +27,6 @@ public class MaxMeetings {
                 maxMeets++;
             }
         }
-
         return maxMeets;
     }
 }
