@@ -41,5 +41,24 @@ public class JobSequencing {
 
     // Correct soln: Delay your process as late as possible (greedy soch) so that your upcoming process in high to low order have more days left to be done
 
+    // static ArrayList<Integer> job(int[] id, int[] deadline, int[] profit){
+    //     ArrayList<Job> jobs = new ArrayList<>();
+    //     for (int i = 0; i < profit.length; i++) {
+    //         jobs.add(new Job(id[i], deadline[i], profit[i]));
+    //     }
+    //     jobs.sort((j1, j2) -> j1.profit - j2.profit);
+        
+    // }
+}
+
+class Job{
+    int id;
+    int deadline;
+    int profit;
     
+    Job(int id, int deadline, int profit){
+        this.id = id;
+        this.deadline = deadline;
+        this.profit = profit;
+    }
 }
